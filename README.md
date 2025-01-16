@@ -1,79 +1,95 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Password Generator
 
-# Getting Started
+A cross-platform password generator application built using React Native and TypeScript. This project enables users to generate strong and secure passwords based on their desired length and character set preferences.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Customizable Passwords**:
+  - Define the length of the password.
+  - Include/exclude uppercase letters, lowercase letters, numbers, and special characters.
+- **Cross-Platform**:
+  - Compatible with both iOS and Android devices.
+- **Simple UI**:
+  - User-friendly interface for generating and copying passwords.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Installation and Setup
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Prerequisites
+- **Node.js**: Install [Node.js](https://nodejs.org/).
+- **React Native Environment**:
+  - Set up the React Native environment by following the [React Native Documentation](https://reactnative.dev/docs/environment-setup).
 
-```bash
-# using npm
-npm start
+### Steps
 
-# OR using Yarn
-yarn start
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/anandharshit712/PasswordGenerator.git
+   ```
 
-## Step 2: Start your Application
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd PasswordGenerator
+   ```
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-### For Android
+4. **Start the Metro Server**:
+   ```bash
+   npm start
+   ```
 
-```bash
-# using npm
-npm run android
+5. **Run the Application**:
 
-# OR using Yarn
-yarn android
-```
+   - For iOS:
+     ```bash
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```bash
+     npx react-native run-android
+     ```
 
-### For iOS
+## Usage
 
-```bash
-# using npm
-npm run ios
+1. Launch the app on your device or emulator.
+2. Specify the desired password length.
+3. Select the character types to include (e.g., uppercase, lowercase, numbers, symbols).
+4. Tap the **Generate** button to create a secure password.
+5. Copy the generated password for your use.
 
-# OR using Yarn
-yarn ios
-```
+## Project Structure
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- **`App.tsx`**: Main application logic.
+- **`android/` and `ios/`**: Platform-specific configuration files.
+- **`__tests__/`**: Unit tests for the app.
+- **`tsconfig.json`**: TypeScript configuration file.
+- **`.eslintrc.js` and `.prettierrc.js`**: Linting and formatting configurations.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Contributing
 
-## Step 3: Modifying your App
+Contributions are welcome! To contribute:
 
-Now that you have successfully run the app, let's modify it.
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Create a Pull Request on GitHub.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Contact
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+For any questions or suggestions, please contact:
+- **Author**: Harshit Anand
+- **GitHub**: [https://github.com/anandharshit712](https://github.com/anandharshit712)
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
