@@ -25,7 +25,7 @@ export default function App() {
   {
     const [password, setpassword] = useState('');
     const [isPassGenerated, setIsPassGenerated] = useState(false);
-    const [lowerCase, setLowerCase] = useState(true);
+    const [lowerCase, setLowerCase] = useState(false);
     const [upperCase, setUpperCase] = useState(false);
     const [numbers, setNumbers] = useState(false);
     const [symbols, setSymbols] = useState(false);
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 12,
-    justifyContent: 'space-between'
+    width: '90%',
   },
   errorText: {
     fontSize: 12,
